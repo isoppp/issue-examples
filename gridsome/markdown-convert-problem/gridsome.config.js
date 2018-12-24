@@ -1,6 +1,15 @@
-// This is where project configuration and installed plugin options are located. 
-// Learn more: https://gridsome.org/docs/config
-
 module.exports = {
-  plugins: []
+  siteName: `Gridsome Starter Blog`,
+  titleTemplate: `%s - Gridsome`,
+
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/*.md',
+        typeName: 'BlogPost',
+        route: '/:slug'
+      }
+    }
+  ]
 }
