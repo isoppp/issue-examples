@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "gridsome/markdown-convert-problem/package.json"
+      ]
+    }
+  }
+}
